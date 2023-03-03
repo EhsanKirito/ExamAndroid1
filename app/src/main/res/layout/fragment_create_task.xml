@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -11,6 +12,77 @@
         android:layout_height="match_parent"
         tools:context=".ToDoList.CreatTaskFragment">
 
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Task Title"
+            app:layout_constraintBottom_toTopOf="@+id/taskDescription"
+            app:layout_constraintEnd_toEndOf="@+id/taskDate"
+            app:layout_constraintStart_toStartOf="@+id/taskDate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.82" />
+
+        <EditText
+            android:id="@+id/taskDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Task Information"
+            app:layout_constraintBottom_toTopOf="@+id/taskDate"
+            app:layout_constraintEnd_toEndOf="@+id/taskDate"
+            app:layout_constraintStart_toStartOf="@+id/taskDate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86" />
+
+        <EditText
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Task Date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39" />
+
+        <RadioButton
+            android:id="@+id/btnDoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doing Task"
+            app:layout_constraintEnd_toEndOf="@+id/btnToDo"
+            app:layout_constraintStart_toStartOf="@+id/btnToDo"
+            app:layout_constraintTop_toBottomOf="@+id/btnToDo" />
+
+        <RadioButton
+            android:id="@+id/btnToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Do Task"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/taskDate"
+            app:layout_constraintStart_toStartOf="@+id/taskDate"
+            app:layout_constraintTop_toBottomOf="@+id/taskDate"
+            app:layout_constraintVertical_bias="0.07999998" />
+
+        <RadioButton
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done Task"
+            app:layout_constraintEnd_toEndOf="@+id/btnDoing"
+            app:layout_constraintStart_toStartOf="@+id/btnDoing"
+            app:layout_constraintTop_toBottomOf="@+id/btnDoing" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Task"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnToDo"
+            app:layout_constraintStart_toStartOf="@+id/btnToDo"
+            app:layout_constraintTop_toBottomOf="@+id/btnDone" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

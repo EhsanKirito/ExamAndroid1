@@ -15,6 +15,7 @@ class SignInUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign_in_up)
 
         initializer()
+
         checkIfIsLoggedIn()
 
     }
@@ -28,7 +29,8 @@ class SignInUpActivity : AppCompatActivity() {
     }
 
     private fun checkIfIsLoggedIn(){
-        if (sharedPref?.getString("loginState","1")== "IN"){
+        val sharedPref = getSharedPreferences("database", Context.MODE_PRIVATE)
+        if (sharedPref.getString("loginState","1") == "IN"){
             startActivity(intent)
         }
     }

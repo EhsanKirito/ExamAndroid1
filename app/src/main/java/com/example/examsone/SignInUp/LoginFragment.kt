@@ -42,13 +42,14 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private fun initializer(){
         binding = view?.let { DataBindingUtil.bind(it) }!!
-        val dataBase = activity?.getSharedPreferences("database", Context.MODE_PRIVATE)
-        val dataBaseEdit = dataBase?.edit()
+
         binding.txtUsernameIn.setText(args.username)
         binding.txtPasswordIn.setText(args.password)
     }
 
     private fun checkLogin(){
+        val dataBase = activity?.getSharedPreferences("database", Context.MODE_PRIVATE)
+        val dataBaseEdit = dataBase?.edit()
         if (binding.txtUsernameIn.text.toString().isEmpty()){
             Toast.makeText(context, "email can't be blank", Toast.LENGTH_SHORT).show()
         } else if (binding.txtPasswordIn.text.toString().isEmpty()) {
