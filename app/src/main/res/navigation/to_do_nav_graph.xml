@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/to_do_nav_graph"
-    app:startDestination="@id/creatTaskFragment">
+    app:startDestination="@id/creatTaskMenu">
     <fragment
-        android:id="@+id/creatTaskFragment"
+        android:id="@+id/creatTaskMenu"
         android:name="com.example.examsone.ToDoList.CreatTaskFragment"
         android:label="fragment_create_task"
         tools:layout="@layout/fragment_create_task" />
     <fragment
-        android:id="@+id/toDoFragment"
+        android:id="@+id/toDoMenu"
         android:name="com.example.examsone.ToDoList.ToDoFragment"
         android:label="fragment_todo"
         tools:layout="@layout/fragment_todo" />
     <fragment
-        android:id="@+id/doingFragment"
+        android:id="@+id/doingMenu"
         android:name="com.example.examsone.ToDoList.DoingFragment"
         android:label="fragment_doing"
         tools:layout="@layout/fragment_doing" />
     <fragment
-        android:id="@+id/doneFragment"
+        android:id="@+id/doneMenu"
         android:name="com.example.examsone.ToDoList.DoneFragment"
         android:label="fragment_done"
         tools:layout="@layout/fragment_done" />

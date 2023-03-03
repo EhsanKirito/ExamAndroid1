@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
+            app:destination="@id/signUpFragment"
+            />
         <argument
             android:name="username"
             app:argType="string"
@@ -29,7 +30,9 @@
         tools:layout="@layout/fragment_sign_up" >
         <action
             android:id="@+id/action_signUpFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true"/>
         <argument
             android:name="username"
             app:argType="string"

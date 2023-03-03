@@ -4,13 +4,14 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import com.example.examsone.R
 import com.example.examsone.databinding.FragmentDoingBinding
 import com.example.examsone.databinding.FragmentDoneBinding
 
 
 class DoneFragment : Fragment(R.layout.fragment_done) {
-
+    private val myViewModel: myViewModel by activityViewModels()
     private lateinit var binding : FragmentDoneBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

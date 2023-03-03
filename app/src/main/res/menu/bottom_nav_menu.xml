@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/creatTaskFragment"
+        android:id="@+id/creatTaskMenu"
         android:icon="@drawable/baseline_create_24"
         android:title="Create Task" />
     <item
-        android:id="@+id/toDoFragment"
+        android:id="@+id/toDoMenu"
         android:icon="@drawable/baseline_todo_24"
         android:title="ToDo Tasks" />
     <item
-        android:id="@+id/doingFragment"
+        android:id="@+id/doingMenu"
         android:icon="@drawable/baseline_doing_24"
         android:title="Doing Tasks" />
     <item
-        android:id="@+id/doneFragment"
+        android:id="@+id/doneMenu"
         android:icon="@drawable/baseline_done_all_24"
         android:title="Done Tasks" />
 </menu>
